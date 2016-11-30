@@ -1,0 +1,17 @@
+.template {
+  display: none;
+}
+
+.caption {
+  font-size: 16px;
+  max-width: 470px;
+  margin: auto;
+  background-color: #ddd;
+}
+
+/*@media only screen and (min-width: 768px) and (max-width: 1005px) {
+
+  .caption {
+    font-size: 18px;
+  }
+}*/

@@ -6,7 +6,9 @@
     <title>Jaren Escueta Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/modules.css">
     <script src="https://use.fontawesome.com/434439d369.js"></script>
   </head>
   <body>
@@ -40,30 +42,12 @@
     </nav>
     </header>
     <section id="projects">
-      <h3>Projects</h3>
-      <ul>
-        <li class="item">
-          <a href="#">
-            <img src="img/agrico.jpg" alt="farming sales app">
-            <p class="caption">An app that lets farmers in developing countries bring their product
-              to market without the need for a middle-man.</p>
-          </a>
-        </li>
-        <li class="item">
-          <a href="#">
-            <img src="img/rescue.jpg" alt="emergency beacon app">
-            <p class="caption">An app that makes a smartphone act as an emergency
-              beacon during a natural disaster to let rescuers know where the user is.</p>
-          </a>
-        </li>
-        <li class="item">
-          <a href="#">
-            <img src="img/puppeh.jpg" alt="pet translator app">
-            <p class="caption">An app, in conjunction with a wearable device, that
-              enables dialogue translation between pets and their humans.</p>
-          </a>
-        </li>
-      </ul>
+      <article class="template">
+        <h4>Title</h4>
+        <a href="" target="_blank"><img src="" alt=""></a>
+        <p class="caption"></p>
+        <div>Published <time pubdate datetime="2000-01-01">pubtime</time></div>
+      </article>
     </section>
     <section id="about">
       <h3>About</h3>
@@ -81,8 +65,9 @@
     <footer>
       <p>by Jaren Escueta &copy; 2016</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="scripts/devProjects.js"></script>
+    <script type="text/javascript" src="scripts/project.js"></script>
   </body>
 </html>
