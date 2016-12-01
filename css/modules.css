@@ -3,15 +3,17 @@
 }
 
 .caption {
-  font-size: 16px;
-  max-width: 470px;
+  font-size: 15px;
   margin: auto;
-  background-color: #ddd;
+  background-color: #d58936;
+  color: #000;
+  border: solid #3c1518 5px;
+  border-top-width: 1px;
+  border-bottom-width: 5px;
+  padding: 0 1em 0 1em;
 }
 
 /*@media only screen and (min-width: 768px) and (max-width: 1005px) {
 
-  .caption {
-    font-size: 18px;
-  }
+  
 }*/

@@ -31,9 +31,9 @@
         </div><!-- /.navbar-header -->
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
+            <li class="tab" data-content="all"><a href="#">Home</a></li>
+            <li class="tab" data-content="projects"><a href="#">Projects</a></li>
+            <li class="tab" data-content="about"><a href="#">About</a></li>
             <li><a href="https://www.linkedin.com/in/jaren-escueta-30186565" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/jarenescueta731" target="_blank">GitHub</a></li>
           </ul>
@@ -41,15 +41,18 @@
       </div><!-- /.container-fluid -->
     </nav>
     </header>
-    <section id="projects">
+    <section id="projects" class="tab-content">
+      <h3>Projects</h3>
       <article class="template">
         <h4>Title</h4>
+        <div class="pub">Published <time pubdate datetime="2000-01-01">pubtime</time></div>
         <a href="" target="_blank"><img src="" alt=""></a>
-        <p class="caption"></p>
-        <div>Published <time pubdate datetime="2000-01-01">pubtime</time></div>
+        <section class="caption"></section>
+        <a href="#" class="more">More &rarr;</a>
+        <a href="#" class="less">&larr; Less</a>
       </article>
     </section>
-    <section id="about">
+    <section id="about" class="tab-content">
       <h3>About</h3>
       <p>Far far away, behind the word mountains, far from the countries Vokalia
         and Consonantia, there live the blind texts. Separated they live in
@@ -69,5 +72,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/devProjects.js"></script>
     <script type="text/javascript" src="scripts/project.js"></script>
+    <script type="text/javascript" src="scripts/projectView.js"></script>
   </body>
 </html>

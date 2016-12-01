@@ -2,8 +2,25 @@
   box-sizing: border-box;
 }
 
+.navbar-default .navbar-header a {
+  color: white;
+  background-color: red;
+}
+
+body {
+  background-color: #69140e;
+}
+
+h1, h2, h3, h4, .pub {
+  color: #fff;
+}
+
 a {
   text-decoration: none;
+}
+
+a.more, a.less {
+  color: #d58936;
 }
 
 li {
@@ -16,15 +33,17 @@ article {
 
 img {
   max-width: 100%;
-  border: solid #888 10px;
+  border: solid #3c1518 5px;
+  border-bottom-width: 0px;
 }
 
 footer {
   text-align: center;
-  background-color: #ddd;
-  margin-bottom: -2em;
+  background-color: #3c1518;
+  color: #a44200;
   padding-top: 1em;
   padding-bottom: 1em;
+  bottom: 0;
 }
 
 @media only screen and (min-width: 478px) {

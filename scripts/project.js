@@ -18,7 +18,7 @@ Project.prototype.toHtml = function() {
   $newProject.find('a[href]').attr('href', this.projectUrl);
   $newProject.find('h4').text(this.title);
   $newProject.find('img').attr({src: this.imgSrc, alt: this.imgAlt});
-  $newProject.find('p[class]').text(this.caption);
+  $newProject.find('section[class="caption"]').html(this.caption);
   $newProject.find('time[pubdate]').attr('title', this.datePublished);
   // calculates how many days ago the project was last published on GitHub
   $newProject.find('time').text('about ' + parseInt((new Date() - new Date(this.datePublished))/60/60/24/1000) + ' days ago');
