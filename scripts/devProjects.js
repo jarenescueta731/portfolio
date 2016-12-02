@@ -2,6 +2,7 @@ var devProjects = [
   {
     projectUrl: 'https://jarenescueta731.github.io/wiki-viewer/wiki-viewer.html',
     title: 'Wikipedia Viewer',
+    func: 'research',
     imgSrc: 'img/wiki-viewer.jpg',
     imgAlt: 'Wikipedia viewer',
     datePublished: '2016-08-28',
@@ -10,6 +11,7 @@ var devProjects = [
   {
     projectUrl: 'https://jarenescueta731.github.io/calculator/calculator.html',
     title: 'JavaScript Calculator',
+    func: 'math',
     imgSrc: 'img/js-calculator.jpg',
     imgAlt: 'Javascript calculator',
     datePublished: '2016-08-29',
@@ -18,6 +20,7 @@ var devProjects = [
   {
     projectUrl: 'https://jarenescueta731.github.io/pomodoro/pomodoro.html',
     title: 'Pomodoro Clock',
+    func: 'timer',
     imgSrc: 'img/pomodoro.jpg',
     imgAlt: 'Pomodoro clock',
     datePublished: '2016-08-30',

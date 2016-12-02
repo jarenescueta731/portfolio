@@ -13,7 +13,6 @@
   padding: 0 1em 0 1em;
 }
 
-/*@media only screen and (min-width: 768px) and (max-width: 1005px) {
-
-  
-}*/
+#about p {
+  font-family: 'Droid Serif', serif;
+}

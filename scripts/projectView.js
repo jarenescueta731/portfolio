@@ -1,11 +1,5 @@
 var projectView = {};
 
-// projectView.populateFilters = function() {
-//   $('article').not('.template').each(function() {
-//
-//   });
-// };
-
 projectView.handleNavbar = function() {
   $('#myNavbar .tab:first').on('click', function(e){
     e.preventDefault();
@@ -35,5 +29,29 @@ projectView.expandContract = function() {
   });
 };
 
+projectView.populateFilter = function() {
+  $('article').not('.template').each(function() {
+    var funcName = $(this).find('.pub p span').text();
+    var optionTag = '<option value="' + funcName + '">' + funcName + '</option>';
+    if ($('#tag-filter option[value="' + funcName + '"]').length === 0){
+      $('#tag-filter').append(optionTag);
+    }
+  });
+};
+
+projectView.handleFilter = function() {
+  $('#tag-filter').on('change', function(){
+    if ($(this).val()) {
+      $('article').hide();
+      $('article[data-func="' + $(this).val() + '"]').fadeIn();
+    } else {
+      $('article').fadeIn();
+      $('article.template').hide();
+    }
+  });
+};
+
 projectView.handleNavbar();
 projectView.expandContract();
+projectView.populateFilter();
+projectView.handleFilter();

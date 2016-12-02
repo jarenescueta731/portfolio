@@ -15,8 +15,32 @@ h1, h2, h3, h4, .pub {
   color: #fff;
 }
 
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+}
+
+h3, h4 {
+  font-family: 'Sahitya', serif;
+}
+
 a {
   text-decoration: none;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+}
+
+.pub p {
+  font-size: 10px;
+  color: #a44200;
+  position: absolute;
+  right: 5px;
+}
+
+span {
+  color: #888;
 }
 
 a.more, a.less {
@@ -58,5 +82,9 @@ footer {
   article {
     display: inline-block;
     max-width: 45%;
+  }
+
+  .pub p {
+    right: auto;
   }
 }
