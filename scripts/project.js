@@ -13,13 +13,12 @@ function Project (obj) {
 };
 
 // "Fills" a Handlebars.js template for each object in the devProjects array
-Project.prototype.toHtml = function() {
+Project.prototype.toHtml = function(templateId) {
+  var theTemplate = Handlebars.compile($(templateId).html());
   // calculates how many days ago the project was last published on GitHub
   this.pubDays = parseInt((new Date() - new Date(this.datePublished))/60/60/24/1000);
   this.pubStat = this.datePublished ? 'Published ' + this.pubDays + ' days ago' : '(draft)';
   // compile the template from index.html
-  var $frame = $('#project-template').html();
-  var theTemplate = Handlebars.compile($frame);
   return theTemplate(this);
 };
 

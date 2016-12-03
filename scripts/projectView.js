@@ -29,12 +29,11 @@ projectView.expandContract = function() {
   });
 };
 
-projectView.populateFilter = function() {
-  $('article').not('.template').each(function() {
-    var funcName = $(this).find('.pub p span').text();
-    var optionTag = '<option value="' + funcName + '">' + funcName + '</option>';
-    if ($('#tag-filter option[value="' + funcName + '"]').length === 0){
-      $('#tag-filter').append(optionTag);
+projectView.templateRender = function() {
+  projects.forEach(function(projectObj) {
+    $('#projects').append(projectObj.toHtml('#project-template'));
+    if ($('#tag-filter option[value="' + projectObj.func + '"]').length === 0){
+      $('#tag-filter').append(projectObj.toHtml('#tag-template'));
     }
   });
 };
@@ -52,6 +51,6 @@ projectView.handleFilter = function() {
 };
 
 projectView.handleNavbar();
-projectView.expandContract();
-projectView.populateFilter();
+projectView.templateRender();
 projectView.handleFilter();
+projectView.expandContract();
