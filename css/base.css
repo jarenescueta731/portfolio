@@ -70,12 +70,12 @@ footer {
   bottom: 0;
 }
 
-@media only screen and (min-width: 478px) {
+/*@media only screen and (min-width: 478px) {
 
   footer {
     margin-top: 4em;
   }
-}
+}*/
 
 @media only screen and (min-width: 768px) {
 

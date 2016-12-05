@@ -16,3 +16,8 @@
 #about p {
   font-family: 'Droid Serif', serif;
 }
+
+/* Subtract footer height from viewport's total height */
+.wrap {
+  min-height: calc(100vh - 68px);
+}

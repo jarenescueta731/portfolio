@@ -28,62 +28,64 @@
     </script>
   </head>
   <body>
-    <header class="clearfix">
-      <section id="headings">
-        <h1><strong>Portfolio</strong></h1>
-        <h2>Code 301d15</h2>
+    <div class="wrap">
+      <header class="clearfix">
+        <section id="headings">
+          <h1><strong>Portfolio</strong></h1>
+          <h2>Code 301d15</h2>
+        </section>
+        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><i class="fa fa-code" aria-hidden="true"></i></a>
+          </div><!-- /.navbar-header -->
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="tab" data-content="all"><a href="#">Home</a></li>
+              <li class="tab" data-content="projects"><a href="#">Projects</a></li>
+              <li class="tab" data-content="about"><a href="#">About</a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/jaren-escueta-30186565" target="_blank">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/jarenescueta731" target="_blank">
+                  <i class="fa fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      </header>
+      <section id="projects" class="tab-content">
+        <h3>Projects</h3>
+        <select id="tag-filter">
+          <option value="">~~ Filter by Tag ~~</option>
+        </select>
       </section>
-      <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><i class="fa fa-code" aria-hidden="true"></i></a>
-        </div><!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="tab" data-content="all"><a href="#">Home</a></li>
-            <li class="tab" data-content="projects"><a href="#">Projects</a></li>
-            <li class="tab" data-content="about"><a href="#">About</a></li>
-            <li>
-              <a href="https://www.linkedin.com/in/jaren-escueta-30186565" target="_blank">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/jarenescueta731" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i> GitHub
-              </a>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    </header>
-    <section id="projects" class="tab-content">
-      <h3>Projects</h3>
-      <select id="tag-filter">
-        <option value="">~~ Filter by Tag ~~</option>
-      </select>
-    </section>
-    <section id="about" class="tab-content">
-      <h3>About</h3>
-      <p>Far far away, behind the word mountains, far from the countries Vokalia
-        and Consonantia, there live the blind texts. Separated they live in
-        Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-        A small river named Duden flows by their place and supplies it with the
-        necessary regelialia.</p>
-      <ul>
-        <li><i class="fa fa-envelope" aria-hidden="true"></i> Email: myemail@live.com</li>
-        <li><i class="fa fa-phone" aria-hidden="true"></i> Phone: (555)123-4567</li>
-        <li><i class="fa fa-address-card" aria-hidden="true"></i> Address: 8910 Gnoweir St, Somewhereland 99999</li>
-      </ul>
-    </section>
+      <section id="about" class="tab-content">
+        <h3>About</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia
+          and Consonantia, there live the blind texts. Separated they live in
+          Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+          A small river named Duden flows by their place and supplies it with the
+          necessary regelialia.</p>
+        <ul>
+          <li><i class="fa fa-envelope" aria-hidden="true"></i> Email: myemail@live.com</li>
+          <li><i class="fa fa-phone" aria-hidden="true"></i> Phone: (555)123-4567</li>
+          <li><i class="fa fa-address-card" aria-hidden="true"></i> Address: 8910 Gnoweir St, Somewhereland 99999</li>
+        </ul>
+      </section>
+    </div><!-- /.wrap -->
     <footer>
       <p>by Jaren Escueta &copy; 2016</p>
     </footer>
