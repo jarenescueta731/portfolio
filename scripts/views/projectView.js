@@ -29,15 +29,6 @@ projectView.expandContract = function() {
   });
 };
 
-projectView.templateRender = function() {
-  projects.forEach(function(projectObj) {
-    $('#projects').append(projectObj.toHtml('#project-template'));
-    if ($('#tag-filter option[value="' + projectObj.func + '"]').length === 0){
-      $('#tag-filter').append(projectObj.toHtml('#tag-template'));
-    }
-  });
-};
-
 projectView.handleFilter = function() {
   $('#tag-filter').on('change', function(){
     if ($(this).val()) {
@@ -50,7 +41,17 @@ projectView.handleFilter = function() {
   });
 };
 
-projectView.handleNavbar();
-projectView.templateRender();
-projectView.handleFilter();
-projectView.expandContract();
+projectView.pageRender = function() {
+  Project.allProjects.forEach(function(projectObj) {
+    $('#projects').append(projectObj.toHtml('#project-template'));
+    if ($('#tag-filter option[value="' + projectObj.func + '"]').length === 0){
+      $('#tag-filter').append(projectObj.toHtml('#tag-template'));
+    }
+  });
+  projectView.handleNavbar();
+  projectView.handleFilter();
+  projectView.expandContract();
+};
+
+// Retrieve the json data
+Project.retrieveAll();
