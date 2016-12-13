@@ -7,23 +7,36 @@
   padding-left: 0.5em;
 }
 
-#about {
-  padding-left: 0.5em;
+#about, #contact {
   max-width: 470px;
   color: #fff;
+  margin-right: 2em;
+  margin-left: 2em;
 }
+
+#contact {
+  margin-bottom: 1em;
+}
+
+#contact ul {
+  padding: 0;
+}
+
 
 @media only screen and (min-width: 478px) {
 
-  #headings {
+  #headings, #projects {
     text-align: center;
   }
+}
 
-  #projects {
-    text-align: center;
-  }
+@media only screen and (min-width: 555px) {
 
   #about {
     margin: auto;
+  }
+
+  #contact {
+    margin: 0 auto 1em;
   }
 }

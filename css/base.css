@@ -61,6 +61,10 @@ img {
   border-bottom-width: 0px;
 }
 
+#about p {
+  font-family: 'Droid Serif', serif;
+}
+
 footer {
   text-align: center;
   background-color: #3c1518;
