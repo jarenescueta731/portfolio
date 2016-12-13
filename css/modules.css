@@ -19,5 +19,5 @@
 
 /* Subtract footer height from viewport's total height */
 .wrap {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 128px);
 }

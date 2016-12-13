@@ -1,18 +1,6 @@
 (function(module) { //all projectView functions wrapped in an IIFE
   var projectView = {};
 
-  projectView.handleNavbar = function() {
-    $('#myNavbar .tab:first').on('click', function(e){
-      e.preventDefault();
-      $('.tab-content').hide().fadeIn();
-    });
-    $('#myNavbar .tab:gt(0)').on('click', function(e){
-      e.preventDefault();
-      $('.tab-content').hide();
-      $('#' + $(this).data('content')).fadeIn();
-    });
-  };
-
   projectView.expandContract = function() {
     $('.caption p:nth-of-type(2)').hide();
     $('a.less').hide();
@@ -54,7 +42,6 @@
         $('#tag-filter').append(projectObj.toHtml('#tag-template'));
       }
     });
-    projectView.handleNavbar();
     projectView.handleFilter();
     projectView.expandContract();
     projectView.footerStats();
