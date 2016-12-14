@@ -2,13 +2,30 @@
   box-sizing: border-box;
 }
 
+.navbar-default {
+  background-color: #2a4848;
+  box-shadow: 0 0 10px 2px #000;
+  border-bottom-color: #2a4848;
+}
+
+/* cf logo */
 .navbar-default .navbar-header a {
-  color: white;
-  background-color: red;
+  color: #dbd2c1;
+  background-color: #2a4848;
+}
+
+.navbar-default .navbar-header a:hover,
+.navbar-default .navbar-header a:focus {
+  color: #fff;
+  background-color: #5b818c;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #dbd2c1;
 }
 
 body {
-  background-color: #69140e;
+  background-color: #888;
 }
 
 h1, h2, h3, h4, .pub {
@@ -40,11 +57,11 @@ select {
 }
 
 span {
-  color: #888;
+  color: #000;
 }
 
 a.more, a.less {
-  color: #d58936;
+  color: #000;
 }
 
 li {
@@ -57,17 +74,26 @@ article {
 
 img {
   max-width: 100%;
-  border: solid #3c1518 5px;
+  border: solid #423a37 5px;
   border-bottom-width: 0px;
+}
+
+#about p {
+  font-family: 'Droid Serif', serif;
 }
 
 footer {
   text-align: center;
-  background-color: #3c1518;
-  color: #a44200;
+  background-color: #423a37;
+  color: #6f9fa3;
   padding-top: 1em;
   padding-bottom: 1em;
   bottom: 0;
+  margin-top: 1em;
+}
+
+footer span {
+  color: #888;
 }
 
 @media only screen and (min-width: 768px) {

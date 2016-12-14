@@ -35,36 +35,27 @@
           <h2>Code 301d15</h2>
         </section>
         <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><i class="fa fa-code" aria-hidden="true"></i></a>
-          </div><!-- /.navbar-header -->
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="tab" data-content="all"><a href="#">Home</a></li>
-              <li class="tab" data-content="projects"><a href="#">Projects</a></li>
-              <li class="tab" data-content="about"><a href="#">About</a></li>
-              <li>
-                <a href="https://www.linkedin.com/in/jaren-escueta-30186565" target="_blank">
-                  <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/jarenescueta731" target="_blank">
-                  <i class="fa fa-github" aria-hidden="true"></i> GitHub
-                </a>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><i class="fa fa-code" aria-hidden="true"></i></a>
+            </div><!-- /.navbar-header -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="tab" data-content="all"><a href="/">Home</a></li>
+                <li class="tab" data-content="projects"><a href="./projects">Projects</a></li>
+                <li class="tab" data-content="about"><a href="./about">About</a></li>
+                <li class="tab" data-content="contact"><a href="./contact">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
       </header>
       <section id="projects" class="tab-content">
         <h3>Projects</h3>
@@ -79,11 +70,22 @@
           Bookmarksgrove right at the coast of the Semantics, a large language ocean.
           A small river named Duden flows by their place and supplies it with the
           necessary regelialia.</p>
+      </section>
+      <section id="contact" class="tab-content">
+        <h3>Contact Me</h3>
         <ul>
           <li><i class="fa fa-envelope" aria-hidden="true"></i> Email: myemail@live.com</li>
           <li><i class="fa fa-phone" aria-hidden="true"></i> Phone: (555)123-4567</li>
           <li><i class="fa fa-address-card" aria-hidden="true"></i> Address: 8910 Gnoweir St, Somewhereland 99999</li>
         </ul>
+        <div id="socialMedia">
+          <a href="https://twitter.com/eski_mojo" target="_blank">
+            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/jaren-escueta-30186565" target="_blank">
+            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://github.com/jarenescueta731" target="_blank">
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        </div>
       </section>
     </div><!-- /.wrap -->
     <footer>
@@ -95,6 +97,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/434439d369.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="scripts/controllers/homeController.js"></script>
+    <script src="scripts/controllers/projectController.js"></script>
+    <script src="scripts/controllers/aboutController.js"></script>
+    <script src="scripts/controllers/contactController.js"></script>
+    <script src="scripts/controllers/routeHandlers.js"></script>
     <script src="scripts/models/project.js"></script>
     <script src="scripts/views/projectView.js"></script>
   </body>

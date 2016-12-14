@@ -3,21 +3,25 @@
 }
 
 .caption {
-  font-size: 15px;
+  font-size: 14px;
   margin: auto;
-  background-color: #d58936;
+  background-color: #6f9fa3;
   color: #000;
-  border: solid #3c1518 5px;
+  border: solid #423a37 5px;
   border-top-width: 1px;
   border-bottom-width: 5px;
-  padding: 0 1em 0 1em;
+  padding: 0 1.5em 0 1.5em;
 }
 
-#about p {
-  font-family: 'Droid Serif', serif;
+#socialMedia {
+  text-align: center;
+}
+
+#socialMedia a {
+  padding-right: 1em;
 }
 
 /* Subtract footer height from viewport's total height */
 .wrap {
-  min-height: calc(100vh - 68px);
+  min-height: calc(100vh - 132px);
 }
