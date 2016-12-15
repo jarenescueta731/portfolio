@@ -1,31 +1,16 @@
 (function(module) {
   var repos = {};
 
-  repos.allRepos = [];
-  repos.followers = [];
+  // Refactored $.ajax requests into $.get requests
   repos.requestRepos = function(callback) {
-    $.ajax({
-      url: 'https://api.github.com/users/jjron/repos',
-      type: 'GET',
-      headers: {
-        'Authorization': 'token ' + githubToken
-      },
-      success: function(data) {
+    $.when(
+      $.get('/github/users/jjron/repos', function(data){
         repos.allRepos = data;
-        callback();
-      }
-    });
-    $.ajax({
-      url: 'https://api.github.com/users/jjron/followers',
-      type: 'GET',
-      headers: {
-        'Authorization': 'token ' + githubToken
-      },
-      success: function(data) {
+      }),
+      $.get('/github/users/jjron/followers', function(data){
         repos.followers = data;
-        callback();
-      }
-    });
+      })
+    ).done(callback);
   };
 
   /* Filters repos by a specific attribute */
