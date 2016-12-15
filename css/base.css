@@ -20,8 +20,15 @@
   background-color: #5b818c;
 }
 
+/* navbar links */
 .navbar-default .navbar-nav li a {
   color: #dbd2c1;
+}
+
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus {
+  color: #fff;
+  background-color: #5b818c;
 }
 
 body {
