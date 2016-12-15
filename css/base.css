@@ -82,6 +82,10 @@ img {
   font-family: 'Droid Serif', serif;
 }
 
+.followers a {
+  color: #fff;
+}
+
 footer {
   text-align: center;
   background-color: #423a37;

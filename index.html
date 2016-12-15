@@ -26,6 +26,21 @@
     <script id="tag-template" type="x-handlebar-template">
       <option value="{{func}}">{{func}}</option>
     </script>
+    <script id="repo-template" type="text/x-handlebar-template">
+      <li>
+        <a href="" target="_blank"><h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Primary Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
+    <script id="follower-template" type="text/x-handlebar-template">
+      <li><a href="{{html_url}}">{{login}}</a></li>
+    </script>
   </head>
   <body>
     <div class="wrap">
@@ -65,11 +80,24 @@
       </section>
       <section id="about" class="tab-content">
         <h3>About</h3>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia
-          and Consonantia, there live the blind texts. Separated they live in
-          Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-          A small river named Duden flows by their place and supplies it with the
-          necessary regelialia.</p>
+        <p>Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of the Semantics, a large
+          language ocean. A small river named Duden flows by their place and
+          supplies it with the necessary regelialia. It is a paradisematic
+          country, in which roasted parts of sentences fly into your mouth.
+          Even the all-powerful Pointing has no control about the blind texts
+          it is an almost unorthographic life</p>
+        <section class="github-stats">
+          <h3>Followers</h3>
+          <ul class="followers">
+            <li>Followers begin here</li>
+          </ul>
+          <h3>Check out my Projects on GitHub:</h3>
+          <ul class="projects">
+            <li>Coding Projects Go Here</li>
+          </ul>
+        </section>
       </section>
       <section id="contact" class="tab-content">
         <h3>Contact Me</h3>
@@ -98,12 +126,15 @@
     <script src="https://use.fontawesome.com/434439d369.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="scripts/githubToken.js"></script>
+    <script src="scripts/models/project.js"></script>
+    <script src="scripts/models/repo.js"></script>
+    <script src="scripts/views/projectView.js"></script>
+    <script src="scripts/views/repoView.js"></script>
     <script src="scripts/controllers/homeController.js"></script>
     <script src="scripts/controllers/projectController.js"></script>
     <script src="scripts/controllers/aboutController.js"></script>
     <script src="scripts/controllers/contactController.js"></script>
     <script src="scripts/controllers/routeHandlers.js"></script>
-    <script src="scripts/models/project.js"></script>
-    <script src="scripts/views/projectView.js"></script>
   </body>
 </html>
